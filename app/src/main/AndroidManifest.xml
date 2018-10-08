@@ -3,6 +3,7 @@
           package="com.xgs.androiddemo">
 
     <uses-permission android:name="android.permission.CALL_PHONE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,6 +27,10 @@
         <activity android:name=".chapter1.ToolBarActivity">
         </activity>
         <activity android:name=".chapter1.PermissionsActivity">
+        </activity>
+        <activity android:name=".design.DesignActivity">
+        </activity>
+        <activity android:name=".design.TabActivity">
         </activity>
     </application>
 

@@ -7,6 +7,8 @@ import android.webkit.PermissionRequest;
 
 import com.xgs.androiddemo.chapter1.PermissionsActivity;
 import com.xgs.androiddemo.chapter1.ToolBarActivity;
+import com.xgs.androiddemo.design.DesignActivity;
+import com.xgs.androiddemo.design.TabActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent = new Intent(this, PermissionsActivity.class);
+        Intent intent = new Intent(this, TabActivity.class);
         startActivity(intent);
     }
 }
