@@ -1,19 +1,17 @@
-package com.xgs.androiddemo;
+package com.xgs.androiddemo.chapter1;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
 import android.widget.Toast;
 
+import com.xgs.androiddemo.R;
 import com.xgs.androiddemo.adapter.RecyclerAdapter;
 import com.xgs.androiddemo.view.DividerGridItemDecoration;
-import com.xgs.androiddemo.view.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;

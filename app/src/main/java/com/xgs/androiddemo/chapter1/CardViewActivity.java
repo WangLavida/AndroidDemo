@@ -1,9 +1,11 @@
-package com.xgs.androiddemo;
+package com.xgs.androiddemo.chapter1;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.widget.SeekBar;
+
+import com.xgs.androiddemo.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

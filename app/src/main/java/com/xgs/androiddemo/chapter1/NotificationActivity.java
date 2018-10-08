@@ -1,4 +1,4 @@
-package com.xgs.androiddemo;
+package com.xgs.androiddemo.chapter1;
 
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -15,6 +15,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RemoteViews;
+
+import com.xgs.androiddemo.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
