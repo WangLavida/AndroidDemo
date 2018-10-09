@@ -1,13 +1,21 @@
 package com.xgs.androiddemo.design;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 import com.xgs.androiddemo.R;
 import com.xgs.androiddemo.adapter.FragmentAdapter;
@@ -28,6 +36,14 @@ public class TabActivity extends AppCompatActivity {
     AppBarLayout appBar;
     @BindView(R.id.view_pager)
     ViewPager viewPager;
+    @BindView(R.id.nav)
+    NavigationView nav;
+    @BindView(R.id.drawer)
+    DrawerLayout drawer;
+    @BindView(R.id.fab)
+    FloatingActionButton fab;
+    @BindView(R.id.main_content)
+    CoordinatorLayout mainContent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,5 +70,24 @@ public class TabActivity extends AppCompatActivity {
         viewPager.setAdapter(fragmentAdapter);
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.setTabsFromPagerAdapter(fragmentAdapter);
+        nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()) {
+                    case R.id.nav_home:
+                        Toast.makeText(TabActivity.this, "点击了首页", Toast.LENGTH_LONG).show();
+                        drawer.closeDrawers();
+                        break;
+                }
+                return true;
+            }
+        });
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(mainContent, "点击了事件", Snackbar.LENGTH_LONG).show();
+            }
+        });
     }
 }
