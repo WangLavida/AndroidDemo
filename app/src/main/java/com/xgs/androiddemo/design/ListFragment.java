@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import com.xgs.androiddemo.R;
 import com.xgs.androiddemo.adapter.RecyclerAdapter;
-import com.xgs.androiddemo.view.DividerItemDecoration;
+import com.xgs.androiddemo.common.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;

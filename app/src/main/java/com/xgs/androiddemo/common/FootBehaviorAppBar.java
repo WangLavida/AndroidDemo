@@ -1,4 +1,4 @@
-package com.xgs.androiddemo.view;
+package com.xgs.androiddemo.common;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

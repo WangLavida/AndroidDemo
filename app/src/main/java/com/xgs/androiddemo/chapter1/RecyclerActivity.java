@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.xgs.androiddemo.R;
 import com.xgs.androiddemo.adapter.RecyclerAdapter;
-import com.xgs.androiddemo.view.DividerGridItemDecoration;
+import com.xgs.androiddemo.common.DividerGridItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;

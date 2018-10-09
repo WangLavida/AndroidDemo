@@ -32,6 +32,8 @@
         </activity>
         <activity android:name=".design.TabActivity">
         </activity>
+        <activity android:name=".view.ViewActivity">
+        </activity>
     </application>
 
 </manifest>
